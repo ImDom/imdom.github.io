@@ -268,6 +268,40 @@
                 font-size: 2.6vw;
             }
 
+            .project .stack {
+                z-index: 2;
+                position: absolute;
+                bottom: 1vw;
+                left: 1vw;
+            }
+
+            .project .stack .icon {
+                width: 2vw;
+                height: 2vw;
+                float: left;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-right: .4vw;
+            }
+
+            .project .stack .icon.code {
+                opacity: .8;
+                margin-right: 1vw;
+            }
+
+            .icon.android { background-image: url(icons/android.png); }
+            .icon.apple { background-image: url(icons/apple.png); }
+            .icon.code { background-image: url(icons/code.png); }
+            .icon.cpp { background-image: url(icons/cpp.png); }
+            .icon.css3 { background-image: url(icons/css3.png); }
+            .icon.frostbite { background-image: url(icons/frostbite.png); }
+            .icon.html5 { background-image: url(icons/html5.png); }
+            .icon.js { background-image: url(icons/js.png); }
+            .icon.python { background-image: url(icons/python.png); }
+            .icon.react { background-image: url(icons/react.png); }
+            .icon.ts { background-image: url(icons/ts.png); }
+
             .project.bf5 { background-image: url(images/bf5.jpg); }
 
             .project.bf1 { background-image: url(images/bf1.jpg); }
@@ -289,6 +323,11 @@
 
             .project.bf3 { background-image: url(images/bf3.jpg); }
         </style>
+
+        <!--
+        - Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
+        - License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+        -->
     </head>
         
     <body>
@@ -302,6 +341,16 @@
         <div class="projects">
             <div class="project bf5" id="project-bf5">
                 <div class="title">Battlefield V</div>
+                <div class="stack">
+                    <div class="icon code"></div>
+                    <div class="icon ts" title="TypeScript"></div>
+                    <div class="icon js" title="JavaScript"></div>
+                    <div class="icon react" title="React"></div>
+                    <div class="icon html5" title="HTML5"></div>
+                    <div class="icon css3" title="CSS3"></div>
+                    <div class="icon cpp" title="C++"></div>
+                    <div class="icon frostbite" title="Frostbite"></div>
+                </div>
             </div>
 
             <!--<div class="project bf1" id="project-bf1--apocalypse">
@@ -322,10 +371,25 @@
             </div>-->
             <div class="project bf1" id="project-bf1">
                 <div class="title">Battlefield 1</div>
+                <div class="stack">
+                    <div class="icon code"></div>
+                    <div class="icon ts" title="TypeScript"></div>
+                    <div class="icon js" title="JavaScript"></div>
+                    <div class="icon react" title="React"></div>
+                    <div class="icon frostbite" title="Frostbite"></div>
+                </div>
             </div>
 
             <div class="project bfh" id="project-bfh">
                 <div class="title">Battlefield Hardline</div>
+                <div class="stack">
+                    <div class="icon code"></div>
+                    <div class="icon js" title="JavaScript"></div>
+                    <div class="icon react" title="React"></div>
+                    <div class="icon html5" title="HTML5"></div>
+                    <div class="icon css3" title="CSS3"></div>
+                    <div class="icon python" title="Python"></div>
+                </div>
             </div>
 
             <!--<div class="project bf4" id="project-bf4--final-stand">
@@ -350,10 +414,29 @@
             </div>-->
             <div class="project bf4" id="project-bf4">
                 <div class="title">Battlefield 4</div>
+                <div class="stack">
+                    <div class="icon code"></div>
+                    <div class="icon ts" title="TypeScript"></div>
+                    <div class="icon js" title="JavaScript"></div>
+                    <div class="icon react" title="React"></div>
+                    <div class="icon html5" title="HTML5"></div>
+                    <div class="icon css3" title="CSS3"></div>
+                    <div class="icon python" title="Python"></div>
+                    <div class="icon frostbite" title="Frostbite"></div>
+                    <div class="icon apple" title="iOS"></div>
+                    <div class="icon android" title="Android"></div>
+                </div>
             </div>
 
             <div class="project mohw" id="project-mohw">
                 <div class="title">Medal of Honor: Warfighter</div>
+                <div class="stack">
+                    <div class="icon code"></div>
+                    <div class="icon js" title="JavaScript"></div>
+                    <div class="icon html5" title="HTML5"></div>
+                    <div class="icon css3" title="CSS3"></div>
+                    <div class="icon python" title="Python"></div>
+                </div>
             </div>
 
             <!--<div class="project bf3" id="project-bf3--end-game">
@@ -378,6 +461,15 @@
             </div>-->
             <div class="project bf3" id="project-bf3">
                 <div class="title">Battlefield 3</div>
+                <div class="stack">
+                    <div class="icon code"></div>
+                    <div class="icon js" title="JavaScript"></div>
+                    <div class="icon html5" title="HTML5"></div>
+                    <div class="icon css3" title="CSS3"></div>
+                    <div class="icon python" title="Python"></div>
+                    <div class="icon apple" title="iOS"></div>
+                    <div class="icon android" title="Android"></div>
+                </div>
             </div>
 
             <!--<div class="project-more">+ MORE</div>-->
