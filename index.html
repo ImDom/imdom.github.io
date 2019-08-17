@@ -13,7 +13,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=600">
         <title>rask.me</title>
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,400&display=swap" rel="stylesheet">
         <style>
             @-webkit-keyframes bounce {
                 0% {
@@ -125,103 +125,13 @@
                 }
             }
 
-            @-webkit-keyframes inikfade {
-                0% {
-                    color: rgba(0, 0, 0, 0);
-                }
-
-                60% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                90% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                100% {
-                    color: rgba(0, 0, 0, 0);
-                }
-            }
-
-            @-moz-keyframes inikfade {
-                0% {
-                    color: rgba(0, 0, 0, 0);
-                }
-
-                60% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                90% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                100% {
-                    color: rgba(0, 0, 0, 0);
-                }
-            }
-
-            @-ms-keyframes inikfade {
-                0% {
-                    color: rgba(0, 0, 0, 0);
-                }
-
-                60% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                90% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                100% {
-                    color: rgba(0, 0, 0, 0);
-                }
-            }
-
-            @-o-keyframes inikfade {
-                0% {
-                    color: rgba(0, 0, 0, 0);
-                }
-
-                60% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                90% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                100% {
-                    color: rgba(0, 0, 0, 0);
-                }
-            }
-
-            @keyframes inikfade {
-                0% {
-                    color: rgba(0, 0, 0, 0);
-                }
-
-                60% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                90% {
-                    color: rgba(0, 0, 0, 1);
-                }
-
-                100% {
-                    color: rgba(0, 0, 0, 0);
-                }
-            }
-
             html, body {
                 padding: 0;
                 margin: 0;
             }
             
             body {
-                font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
                 color: #555;
                 background: #efefef;
                 padding: 4%;
@@ -238,24 +148,12 @@
             }
             
             .hello, .iam {
-                font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                font-size: 4em;
+                font-size: 64px;
                 font-weight: 100;
                 letter-spacing: -2px;
                 color: #000;
-                margin: 0 0 .25em;
+                margin: 0 0 16px;
                 position: relative;
-            }
-            
-            .iam i {
-                font-style: normal;
-                color: rgba(0, 0, 0, 0);
-                position: relative;
-                -webkit-animation: inikfade 4s 1.2s;
-                -moz-animation: inikfade 4s 1.2s;
-                -ms-animation: inikfade 4s 1.2s;
-                -o-animation: inikfade 4s 1.2s;
-                animation: inikfade 4s 1.2s;
             }
 
             .hello {
@@ -275,39 +173,24 @@
             }
             
             .description {
-                font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                font-weight: 300;
-                font-size: 1.125em;
-                margin: 2em 0 1em;
+                font-size: 16px;
+                margin: 36px 0 0;
                 position: relative;
-                -webkit-animation: bounce 1.5s;
-                -moz-animation: bounce 1.5s;
-                -ms-animation: bounce 1.5s;
-                -o-animation: bounce 1.5s;
-                animation: bounce 1.5s;
             }
             
             .imat {
-                font-size: .875em;
+                font-size: 14px;
+                margin-top: 6px;
                 position: relative;
-                -webkit-animation: bounce 1.6s;
-                -moz-animation: bounce 1.6s;
-                -ms-animation: bounce 1.6s;
-                -o-animation: bounce 1.6s;
-                animation: bounce 1.6s;
             }
         </style>
     </head>
         
     <body>
-        <p class="hello">Hello!</p>
-        <p class="iam">I'm Dominik Rask.</p>
+        <h1 class="hello">Hello!</h1>
+        <h2 class="iam">I'm Dominik Rask.</h2>
         
-        <p class="description">I'm a Software Engineer at <a href="http://dice.se">DICE LA (Electronic Arts)</a>.</p>
-        
-        <div class="imat">
-            <span>You can find my stuff on</span>
-            <a href="https://github.com/ImDom">GitHub</a>.
-        </div>
+        <p class="description">I'm a Software Engineer with focus on UI development</p>
+        <p class="imat">@ <a href="http://www.dice.se/about/los-angeles">DICE Los Angeles (Electronic Arts)</a></p>
     </body>
 </html>
