@@ -271,17 +271,15 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
 }
 
 .project:hover {
     cursor: pointer;
     text-decoration: none;
+}
 
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+.project:hover .title {
+    transform: scale(1);
 }
 
 .project::after {
@@ -305,6 +303,9 @@ a:hover {
 
 .project .title {
     width: 30%;
+
+    transition: transform 0.1s cubic-bezier(0.61, 1, 0.88, 1);
+    transform: scale(0.9);
 }
 
 .project .expansion {
