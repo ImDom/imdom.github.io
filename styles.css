@@ -271,15 +271,19 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: .1vw;
-    
+
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+}
+
+.project.banner {
+    width: 100%;
 }
 
 .project:hover {
     cursor: pointer;
     text-decoration: none;
-    
+
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
@@ -298,13 +302,13 @@ a:hover {
 .project .title, .project .expansion {
     z-index: 2;
     text-align: center;
-    color: #fff; 
+    color: #fff;
     padding: 0 2vw;
     text-shadow: 0 0 3px rgba(0,0,0,0.9);
 }
 
 .project .title {
-    font-size: 3.8vw;
+    width: 30%;
 }
 
 .project .expansion {
@@ -345,6 +349,8 @@ a:hover {
 .icon.python { background-image: url(icons/python.png); }
 .icon.react { background-image: url(icons/react.png); }
 .icon.ts { background-image: url(icons/ts.png); }
+
+.project.bf2042 { background-image: url(images/bf2042.jpg); }
 
 .project.bf5 { background-image: url(images/bf5.jpg); }
 
