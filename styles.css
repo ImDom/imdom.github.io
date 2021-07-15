@@ -263,12 +263,12 @@ a:hover {
 
 .project {
     background-size: cover;
-    background-position: center;
+    background-position: top;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .project:hover {
@@ -345,7 +345,7 @@ a:hover {
 .icon.react { background-image: url(icons/react.png); }
 .icon.ts { background-image: url(icons/ts.png); }
 
-.project.bf2042 { background-image: url(images/bf2042.jpg); }
+.project.bf2042 { background-image: url(images/bf2042.jpg); align-items: flex-start; }
 
 .project.bf5 { background-image: url(images/bf5.jpg); }
 
@@ -374,8 +374,13 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 599.98px) and (orientation: portrait) {
+@media screen and (max-width: 599.98px) and (orientation: portrait),
+       screen and (max-width: 700px) {
     .projects {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project .title {
+        text-align: right;
     }
 }
