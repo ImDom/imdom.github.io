@@ -300,7 +300,7 @@ a:hover {
 }
 
 .project .title {
-    width: 40%;
+    width: 30%;
 
     transition: transform 0.1s cubic-bezier(0.61, 1, 0.88, 1);
     transform: scale(0.9);
