@@ -179,12 +179,17 @@ a:hover {
     text-decoration: underline;
 }
 
+.main {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .hello, .iam {
-    font-size: 12vw;
+    font-size: calc(1em + 10vmin);
     font-weight: 100;
     letter-spacing: -2px;
     color: #000;
-    padding: 0 2.6vw;
     margin: 0;
 }
 
@@ -206,20 +211,26 @@ a:hover {
 }
 
 .description {
-    font-size: 3.4vw;
+    font-size: calc(0.75em + 1.4vmin);
     margin: 6vh 0 0;
-    padding: 0 2.6vw;
 }
 
 .imat {
-    font-size: 3.2vw;
+    font-size: calc(0.75em + 1vmin);
     margin-top: 1vh;
-    padding: 0 2.6vw;
 }
 
 .social {
-    margin: 12vh 0 6vh;
-    text-align: center;
+    margin: 12vh auto 6vh;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social img {
+    width: calc(1em + 4vmin);
+    height: calc(1em + 4vmin);
 }
 
 .social a {
@@ -233,9 +244,8 @@ a:hover {
 }
 
 .projects-header {
-    padding: 0 2.6vw;
-    font-size: 3.2vw;
-    margin-top: 10vh;
+    font-size: calc(1em + 1vmin);
+    margin-top: calc(1em + 8vmin);
     font-weight: 300;
 }
 
@@ -243,24 +253,12 @@ a:hover {
     display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 25vw;
+    grid-auto-rows: calc(1em + 25vmin);
 }
 
 .projects.banner {
     grid-gap: 0;
     grid-template-columns: 1fr;
-}
-
-.project-more {
-    width: 32.8vw;
-    height: 25vw;
-    color: #000;
-    opacity: .3;
-    font-size: 2.4vw;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .project {
@@ -315,18 +313,18 @@ a:hover {
 .project .stack {
     z-index: 2;
     position: absolute;
-    bottom: 1vw;
-    left: 1vw;
+    bottom: 10px;
+    left: 10px;
 }
 
 .project .stack .icon {
-    width: 3vw;
-    height: 3vw;
+    width: calc(0.5em + 2vmin);
+    height: calc(0.5em + 2vmin);
     float: left;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: .4vw;
+    margin-right: 4px;
 }
 
 .project .stack .icon.code {
@@ -369,3 +367,9 @@ a:hover {
 .project.mohw { background-image: url(images/mohw.jpg); }
 
 .project.bf3 { background-image: url(images/bf3.jpg); }
+
+@media screen and (max-width: 1064px) {
+    .intro, .projects-header {
+        padding: 0 10px;
+    }
+}
