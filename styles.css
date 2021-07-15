@@ -211,7 +211,7 @@ a:hover {
 }
 
 .description {
-    font-size: calc(0.6em + 1.4vmin);
+    font-size: calc(0.5em + 1.4vmin);
     margin: 6vh 0 0;
 }
 
@@ -374,7 +374,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 599.98px) and (orientation: portrait) {
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }
