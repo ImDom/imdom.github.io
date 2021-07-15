@@ -186,7 +186,7 @@ a:hover {
 }
 
 .hello, .iam {
-    font-size: calc(1em + 10vmin);
+    font-size: calc(0.9em + 10vmin);
     font-weight: 100;
     letter-spacing: -2px;
     color: #000;
@@ -211,7 +211,7 @@ a:hover {
 }
 
 .description {
-    font-size: calc(0.75em + 1.4vmin);
+    font-size: calc(0.6em + 1.4vmin);
     margin: 6vh 0 0;
 }
 
@@ -318,8 +318,8 @@ a:hover {
 }
 
 .project .stack .icon {
-    width: calc(0.5em + 2vmin);
-    height: calc(0.5em + 2vmin);
+    width: calc(0.75em + 2vmin);
+    height: calc(0.75em + 2vmin);
     float: left;
     background-size: contain;
     background-position: center;
@@ -371,5 +371,11 @@ a:hover {
 @media screen and (max-width: 1064px) {
     .intro, .projects-header {
         padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
