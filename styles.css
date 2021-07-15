@@ -268,7 +268,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .project:hover {
@@ -378,6 +378,10 @@ a:hover {
        screen and (max-width: 700px) {
     .projects {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project {
+        align-items: flex-end;
     }
 
     .project .title {
