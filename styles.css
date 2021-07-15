@@ -387,4 +387,8 @@ a:hover {
     .project .title {
         width: 30%;
     }
+
+    .project.bf2042 .title {
+        width: 40%;
+    }
 }
