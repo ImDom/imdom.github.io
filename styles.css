@@ -344,7 +344,9 @@ a:hover {
 .icon.react { background-image: url(icons/react.png); }
 .icon.ts { background-image: url(icons/ts.png); }
 
-.project.bf2042 { background-image: url(images/bf2042.jpg); align-items: flex-start; }
+.project.fortnite { background-image: url(images/fortnite-create.jpg); }
+
+.project.bf2042 { background-image: url(images/bf2042.jpg); grid-column: span 2; }
 
 .project.bf5 { background-image: url(images/bf5.jpg); }
 
